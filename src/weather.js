@@ -49,7 +49,7 @@ function loadCoords() {
 }
 
 function init () {
-
+    loadCoords();
 }
 
 init();
