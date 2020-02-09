@@ -84,7 +84,7 @@ function initDOM(parentElement, model) {
     span.innerText = iter.text + " ";
     delBtn.innerText = "❌";
     delBtn.addEventListener("click", handleDelBtn);
-    moveBtn.innerText = "⚠️";
+    moveBtn.innerText = "Move";
     moveBtn.addEventListener("click", handleMoveBtn);
     li.id = iter.id;
     li.appendChild(span);
