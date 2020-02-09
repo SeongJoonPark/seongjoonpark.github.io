@@ -16,7 +16,7 @@ function fetchWeatherData(lat, lon) {
 }
 
 function saveCoords(coordsObj) {
-    localStorage.setItem(COORDS, coordsObj);
+    localStorage.setItem(COORDS, JSON.stringify(coordsObj));
 }
 
 function handleGeoSuccess(position) {
