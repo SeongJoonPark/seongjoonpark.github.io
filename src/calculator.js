@@ -1,3 +1,4 @@
+import "./styles.css"
 
 const NUM_TYPE = 0;
 const OPERATOR_TYPE = 1;

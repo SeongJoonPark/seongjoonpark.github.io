@@ -40,3 +40,21 @@ body {
   z-index: -1;
   animation: fadeIn 0.5s linear;
 }
+table {
+  border-collapse: collapse;
+}
+td {
+  text-align: center;
+  padding: 5px 10px;
+}
+.js-resultText {
+  text-align: right;
+}
+
+td .disable-selection {
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer */
+  -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none; /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+}
