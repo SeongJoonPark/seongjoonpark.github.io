@@ -8,6 +8,9 @@ function generateRandomNum() {
 function paintImage(imageNumber) {
     const image = new Image();
     image.src=`images/${imageNumber+1}.jpg`;
+    image.classList.add("bgImage");
+    document.body.appendChild(image);
+
 }
 
 function init() {
