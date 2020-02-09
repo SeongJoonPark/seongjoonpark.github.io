@@ -10,7 +10,7 @@ function saveName (name) {
     localStorage.setItem(USER_LS,name);
 }
 
-function handleSubmit() {
+function handleSubmit(event) {
     event.preventDefault();
     const nameValue = event.target.value;
     paintGreetings(nameValue);
