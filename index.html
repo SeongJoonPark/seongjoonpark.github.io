@@ -6,31 +6,59 @@
     </head>
 
     <body>
-        <div>
-            <h2>Hello Nico&Lynn!</h2>
-        </div>
+		<div>
+			<h1>Hello Nico&Lynn!</h2>
+		</div>
+		<div class="js-clockDiv">
+			<div>
+				<h1>This time is..</h2>
+			</div>
+			<div>
+				<h2 class="js-clock">00:00:00</h2>
+			</div>
+			<div>
+				<h1>Xmax D-Day</h2>
+			</div>
+			<div>
+				<h2 class="js-xmasClock">000d 00h 00m 00s</h2>
+			</div>
+		</div>
 
-        <div>
-            <h2>This time is..</h2>
-        </div>
-        <div>
-            <h2 class="js-clock">00:00:00</h2>
-        </div>
-        <div>
-            <h2>Xmax D-Day</h2>
-        </div>
-        <div>
-            <h2 class="js-xmasClock">000d 00h 00m 00s</h2>
-        </div>
         <div class="js-todoDiv">
+            <div>
+				<h2>To do list</h2>
+			</div>
             <form class="js-addForm addForm">
                 <input type="text" placeholder="Add Task" />
             </form>
-            <h2 class="js-pendingText pendingText">Pending</h2>
+            <h2 class="js-pendingText pendingText">To do</h2>
             <ul class="js-pendingList"></ul>
-            <h2 class="js-finishedText finishedText">Finished</h2>
+            <h2 class="js-finishedText finishedText">Done</h2>
             <ul class="js-finishedList"></ul>
-        </div> 
+		</div>
+
+		<div class="js-randomNumDiv">
+			<div>
+				<h1>Random Number Game</h1>
+			</div>
+			<div>
+				<h2 class="js-rangeText rangeText">Generate a number between 0 and 200</h2>
+			</div>
+			<div>
+				<input type="range" class="js-rangeInput rangeInput"
+				         min="0" max="200" value="200" step="5"></input>
+				<div>
+					<h3><span>Guess the number: <input type="number" class="js-userInput userInput" value="0" style="width:50px"><button class="js-playBtn playBtn" >play!</button></span>
+					</h3>
+				</div>
+				<div>
+					<h3 class="js-infoText infoText">You chose: nothing, the machine chose: nothing</h3>
+				</div>
+				<div>
+					<h3 class="js-resultText resultText">You will be win!</h3>
+				</div>
+			</div>
+		</div>
         <script src="src/clock.js"></script>
         <script src="src/gretting.js"></script>
         <script src="src/todo.js"></script>
