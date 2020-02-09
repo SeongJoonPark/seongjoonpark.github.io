@@ -5,24 +5,24 @@ const OPERATOR_TYPE = 1;
 
 let stack = [{ type: NUM_TYPE, value: 0 }];
 let equalFlag = false;
-
-const btn7 = document.querySelector(".js-btn7");
-const btn8 = document.querySelector(".js-btn8");
-const btn9 = document.querySelector(".js-btn9");
-const btn4 = document.querySelector(".js-btn4");
-const btn5 = document.querySelector(".js-btn5");
-const btn6 = document.querySelector(".js-btn6");
-const btn1 = document.querySelector(".js-btn1");
-const btn2 = document.querySelector(".js-btn2");
-const btn3 = document.querySelector(".js-btn3");
-const btn0 = document.querySelector(".js-btn0");
-const btnAdd = document.querySelector(".js-btnAdd");
-const btnSubtract = document.querySelector(".js-btnSubtract");
-const btnMultifly = document.querySelector(".js-btnMultifly");
-const btnDivide = document.querySelector(".js-btnDivide");
-const btnEqual = document.querySelector(".js-btnEqual");
-const btnC = document.querySelector(".js-btnC");
-const resultText = document.querySelector(".js-resultText");
+const calculatorDiv = document.querySelector(".js-calculatorDiv");
+const btn7 = calculatorDiv.querySelector(".js-btn7");
+const btn8 = calculatorDiv.querySelector(".js-btn8");
+const btn9 = calculatorDiv.querySelector(".js-btn9");
+const btn4 = calculatorDiv.querySelector(".js-btn4");
+const btn5 = calculatorDiv.querySelector(".js-btn5");
+const btn6 = calculatorDiv.querySelector(".js-btn6");
+const btn1 = calculatorDiv.querySelector(".js-btn1");
+const btn2 = calculatorDiv.querySelector(".js-btn2");
+const btn3 = calculatorDiv.querySelector(".js-btn3");
+const btn0 = calculatorDiv.querySelector(".js-btn0");
+const btnAdd = calculatorDiv.querySelector(".js-btnAdd");
+const btnSubtract = calculatorDiv.querySelector(".js-btnSubtract");
+const btnMultifly = calculatorDiv.querySelector(".js-btnMultifly");
+const btnDivide = calculatorDiv.querySelector(".js-btnDivide");
+const btnEqual = calculatorDiv.querySelector(".js-btnEqual");
+const btnC = calculatorDiv.querySelector(".js-btnC");
+const resultText = calculatorDiv.querySelector(".js-resultText");
 
 function calculate(lValue, operator, rValue) {
   let result = 0;
