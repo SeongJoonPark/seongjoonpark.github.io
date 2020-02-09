@@ -16,11 +16,13 @@
 			<div>
 				<h2 class="js-clock">00:00:00</h2>
 			</div>
-			<div>
-				<h1>Xmax D-Day</h1>
-			</div>
-			<div>
-				<h2 class="js-xmasClock">000d 00h 00m 00s</h2>
+			<div class="js-xmaxClockDiv" style="display:none;">
+				<div>
+					<h1>Xmax D-Day</h1>
+				</div>
+				<div>
+					<h2 class="js-xmasClock">000d 00h 00m 00s</h2>
+				</div>
 			</div>
 		</div>
 
@@ -37,7 +39,7 @@
             <ul class="js-finishedList"></ul>
 		</div>
 
-		<div class="js-randomNumDiv">
+		<div class="js-randomNumDiv" style="display:none;">
 			<div>
 				<h1>Random Number Game</h1>
 			</div>
@@ -59,9 +61,41 @@
 				</div>
 			</div>
 		</div>
+        <div class="js-calculatorDiv" style="display:block;">
+      <table class="disable-selection" style="width:30%" border="1">
+        <tr>
+          <td colspan="3" class="js-resultText js-resultText">0</td>
+          <td class="js-btnC">C</td>
+        </tr>
+        <tr>
+          <td class="js-btn7">7</td>
+          <td class="js-btn8">8</td>
+          <td class="js-btn9">9</td>
+          <td class="js-btnAdd">+</td>
+        </tr>
+        <tr>
+          <td class="js-btn4">4</td>
+          <td class="js-btn5">5</td>
+          <td class="js-btn6">6</td>
+          <td class="js-btnSubtract">-</td>
+        </tr>
+        <tr>
+          <td class="js-btn1">1</td>
+          <td class="js-btn2">2</td>
+          <td class="js-btn3">3</td>
+          <td class="js-btnMultifly">*</td>
+        </tr>
+        <tr>
+          <td class="js-btn0" colspan="2">0</td>
+          <td class="js-btnEqual">=</td>
+          <td class="js-btnDivide">/</td>
+        </tr>
+      </table>
+    </div>
         <script src="src/clock.js"></script>
         <script src="src/gretting.js"></script>
         <script src="src/todo.js"></script>
         <script src="src/random_num.js"></script>
+        <script src="src/calculator.js"></script>
         <script src="src/bg.js"></script>        
     </body>
