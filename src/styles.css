@@ -51,7 +51,7 @@ td {
   text-align: right;
 }
 
-td .disable-selection {
+.disable-selection {
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer */
   -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
