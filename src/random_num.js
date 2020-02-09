@@ -5,7 +5,7 @@ const rangeInput = div.querySelector(".js-rangeInput");
 const userInput = div.querySelector(".js-userInput");
 const playBtn = div.querySelector(".js-playBtn");
 const infoText = div.querySelector(".js-infoText");
-const resultText = div.querySelector(".js-resultText");
+const resultText = div.querySelector(".js-gameResultText");
 
 function generateMachineChose(value) {
   return Math.ceil(Math.random() * value);

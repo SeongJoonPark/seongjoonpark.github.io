@@ -22,7 +22,7 @@ const btnMultifly = calculatorDiv.querySelector(".js-btnMultifly");
 const btnDivide = calculatorDiv.querySelector(".js-btnDivide");
 const btnEqual = calculatorDiv.querySelector(".js-btnEqual");
 const btnC = calculatorDiv.querySelector(".js-btnC");
-const resultText = calculatorDiv.querySelector(".js-resultText");
+const resultText = calculatorDiv.querySelector(".js-calcResultText");
 
 function calculate(lValue, operator, rValue) {
   let result = 0;
