@@ -5,7 +5,7 @@ const rangeInput = div.querySelector(".js-rangeInput");
 const userInput = div.querySelector(".js-userInput");
 const playBtn = div.querySelector(".js-playBtn");
 const infoText = div.querySelector(".js-infoText");
-const resultText = div.querySelector(".js-gameResultText");
+const gameResultText = div.querySelector(".js-gameResultText");
 
 function generateMachineChose(value) {
   return Math.ceil(Math.random() * value);
@@ -17,9 +17,9 @@ function handlePlayBtn() {
   const machineChoseValue = generateMachineChose(rangeInputValue);
   infoText.innerHTML = `You chose: ${userInputValue}, the machine chose: ${machineChoseValue}`;
   if (userInputValue === machineChoseValue) {
-    resultText.innerHTML = "You won!";
+    gameResultText.innerHTML = "You won!";
   } else {
-    resultText.innerHTML = "You lost!";
+    gameResultText.innerHTML = "You lost!";
   }
 }
 

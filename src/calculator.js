@@ -22,7 +22,7 @@ const btnMultifly = calculatorDiv.querySelector(".js-btnMultifly");
 const btnDivide = calculatorDiv.querySelector(".js-btnDivide");
 const btnEqual = calculatorDiv.querySelector(".js-btnEqual");
 const btnC = calculatorDiv.querySelector(".js-btnC");
-const resultText = calculatorDiv.querySelector(".js-calcResultText");
+const calcResultText = calculatorDiv.querySelector(".js-calcResultText");
 
 function calculate(lValue, operator, rValue) {
   let result = 0;
@@ -49,7 +49,7 @@ function calculate(lValue, operator, rValue) {
 function handleNumBtn(event) {
   if (equalFlag) {
     stack = [{ type: NUM_TYPE, value: 0 }];
-    resultText.innerText = 0;
+    calcResultText.innerText = 0;
     equalFlag = false;
   }
   let targetValue = event.target.innerText;
@@ -58,17 +58,17 @@ function handleNumBtn(event) {
     //ex) 02
     stack[stack.length - 1].value *= 10;
     stack[stack.length - 1].value += parseFloat(targetValue);
-    resultText.innerText = stack[stack.length - 1].value;
+    calcResultText.innerText = stack[stack.length - 1].value;
   } else {
     //ex)0*2
-    resultText.innerText = targetValue;
+    calcResultText.innerText = targetValue;
     stack.push({ type: NUM_TYPE, value: parseFloat(targetValue) });
   }
 }
 
 function handleOperatorBtn(event) {
   if (equalFlag) {
-    stack = [{ type: NUM_TYPE, value: parseFloat(resultText.innerText) }];
+    stack = [{ type: NUM_TYPE, value: parseFloat(calcResultText.innerText) }];
     equalFlag = false;
   }
   let targetValue = event.target.innerText;
@@ -88,7 +88,7 @@ function handleOperatorBtn(event) {
         { type: NUM_TYPE, value: calcValue },
         { type: OPERATOR_TYPE, value: targetValue }
       ];
-      resultText.innerText = calcValue;
+      calcResultText.innerText = calcValue;
     }
   } else {
     //ex) 2*-
@@ -108,12 +108,12 @@ function handleEqualBtn(event) {
     let calcValue = calculate(origValue, stack[1].value, origValue);
     stack[0].value = calcValue;
     stack.push({ type: NUM_TYPE, value: origValue });
-    resultText.innerText = calcValue;
+    calcResultText.innerText = calcValue;
   } else if (stack[stack.length - 1].type === NUM_TYPE) {
     //ex) 2*3=
     let calcValue = calculate(stack[0].value, stack[1].value, stack[2].value);
     stack[0].value = calcValue;
-    resultText.innerText = calcValue;
+    calcResultText.innerText = calcValue;
   } else {
     console.log("Somthing Wrong by Equal");
   }
@@ -122,7 +122,7 @@ function handleEqualBtn(event) {
 function handleBtnC(event) {
   console.log(event.target.innerText);
   stack = [{ type: NUM_TYPE, value: 0 }];
-  resultText.innerText = "0";
+  calcResultText.innerText = "0";
 }
 
 function init() {
