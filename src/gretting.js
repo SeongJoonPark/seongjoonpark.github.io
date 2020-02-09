@@ -3,6 +3,7 @@ const SHOWING_CN = "showing";
 
 const userNameDiv = document.querySelector(".js-userNameDiv");
 const userNameForm = userNameDiv.querySelector(".js-userNameForm")
+const userNameInput = userNameDiv.querySelector(".js-userNameInput")
 const userNameTextElement = userNameDiv.querySelector(".js-greetings");
 
 
@@ -12,7 +13,7 @@ function saveName (name) {
 
 function handleSubmit(event) {
     event.preventDefault();
-    const nameValue = event.target.value;
+    const nameValue = userNameInput.value;
     paintGreetings(nameValue);
     saveName(nameValue);
 }
