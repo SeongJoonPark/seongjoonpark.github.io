@@ -3,10 +3,10 @@ const xmasclockTextElement = document.querySelector(".js-xmasClock");
 
 function refreshClock() {
     const date = new Date();
-    hour = date.getHours();
-    min = date.getMinutes();
-    sec = date.getSeconds();
-    clockTextElement.innerText = `${hour<10 ? `0${hour}` : hour} :${min<10 ? `0${min}` : min}:${sec<10 ? `0${sec}` : sec}`;
+    const hour = date.getHours();
+    const min = date.getMinutes();
+    const sec = date.getSeconds();
+    clockTextElement.innerText = `${hour<10 ? `0${hour}` : hour}:${min<10 ? `0${min}` : min}:${sec<10 ? `0${sec}` : sec}`;
 }
 
 function refreshXmasDay() {
